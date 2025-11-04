@@ -17,7 +17,7 @@ export default function Footer() {
             />
           </div>
           <div className="col-auto">
-            <h5 className="fw-bold m-0">AL CARMENIA REAL ESTATE</h5>
+            <h5 className="fw-bold m-0">CARMENIA REAL ESTATE</h5>
           </div>
         </div>
 
