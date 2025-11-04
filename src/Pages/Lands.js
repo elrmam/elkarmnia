@@ -30,6 +30,16 @@ function Lands() {
     );
   }
 
+  if (!loading && Lands.length === 0) {
+    return (
+      <div className="d-flex justify-content-center align-items-center vh-100 bg-dark text-light text-center">
+        <div>
+          <h3 className="text-warning mb-3">لا توجد بيانات متاحة حاليًا</h3>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="container py-4">
       <h1 className="darkgray fw-bold rounded sectionehead my-5 p-3">

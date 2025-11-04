@@ -28,6 +28,16 @@ function Apartments() {
     );
   }
 
+  if (!loading && apartments.length === 0) {
+    return (
+      <div className="d-flex justify-content-center align-items-center vh-100 bg-dark text-light text-center">
+        <div>
+          <h3 className="text-warning mb-3">لا توجد بيانات متاحة حاليًا</h3>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="container py-4">
       <h1 className="darkgray fw-bold rounded sectionehead my-5 p-3">
@@ -69,7 +79,7 @@ function Apartments() {
         <li className="yellow fs-4"><strong className="text-light fs-5">الواجهة :</strong> {apt.front}</li>
         <li className="yellow fs-4"><strong className="text-light fs-5">المساحة :</strong> {apt.size}</li>
         <li className="yellow fs-4"><strong className="text-light fs-5">السعر :</strong> {apt.price}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">اللوكيشن :</strong> <a href={apt.location} target="_blank" rel="noreferrer">اضغط هنا </a></li>
+        <li className="yellow fs-4"> <strong className="text-light fs-5">اللوكيشن :</strong>{" "} {apt.location ? ( <a href={apt.location} target="_blank" rel="noreferrer"> اضغط هنا </a> ) : ( <span className="yellow">لا يوجد</span> )} </li>
         <li className="yellow fs-4"><strong className="text-light fs-5">المميزات :</strong> {apt.notes}</li>
       </ul>
       <div className="text-center mt-3 d-flex justify-content-center">

@@ -6,7 +6,7 @@ function Unit() {
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
                     <h1 className="darkgray fw-bold rounded sectionehead my-5 p-3">
-                        ELKARMNIA REAL ESTATE
+                        AL CARMENIA REAL ESTATE
                     </h1>
                 </div>
             </div>
