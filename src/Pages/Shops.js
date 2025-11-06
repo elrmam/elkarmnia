@@ -75,7 +75,7 @@ function Shops() {
         <li className="yellow fs-4"><strong className="text-light fs-5">رقم العمارة :</strong> {apt.number}</li>
         <li className="yellow fs-4"><strong className="text-light fs-5">المساحة :</strong> {apt.size}</li>
         <li className="yellow fs-4"><strong className="text-light fs-5">السعر :</strong> {apt.price}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">اللوكيشن :</strong> <a href={apt.location} target="_blank" rel="noreferrer">اضغط هنا </a></li>
+        <li className="yellow fs-4"> <strong className="text-light fs-5">اللوكيشن :</strong>{" "} {apt.location ? ( <a href={apt.location} target="_blank" rel="noreferrer"> اضغط هنا </a> ) : ( <span className="yellow">لا يوجد</span> )} </li>
         <li className="yellow fs-4"><strong className="text-light fs-5">المميزات :</strong> {apt.notes}</li>
       </ul>
       <div className="text-center mt-3 d-flex justify-content-center">

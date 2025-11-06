@@ -78,7 +78,7 @@ function Buildings() {
         <li className="yellow fs-4"><strong className="text-light fs-5">رقم الوحدة :</strong> {apt.number}</li>
         <li className="yellow fs-4"><strong className="text-light fs-5">المساحة :</strong> {apt.size}</li>
         <li className="yellow fs-4"><strong className="text-light fs-5">حالة البناء :</strong> {apt.condition}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">اللوكيشن :</strong> <a href={apt.location} target="_blank" rel="noreferrer">اضغط هنا </a></li>
+        <li className="yellow fs-4"> <strong className="text-light fs-5">اللوكيشن :</strong>{" "} {apt.location ? ( <a href={apt.location} target="_blank" rel="noreferrer"> اضغط هنا </a> ) : ( <span className="yellow">لا يوجد</span> )} </li>
         <li className="yellow fs-4"><strong className="text-light fs-5">ملاحظات :</strong> {apt.notes}</li>
       </ul>
       <div className="text-center mt-3 d-flex justify-content-center">
