@@ -69,18 +69,18 @@ function Apartments() {
 
     <div className="apartment-body bg-secondary">
       <ul>
-        <li className="yellow fs-4"><strong className="text-light fs-5"></strong> {apt.category}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">النوع :</strong> {apt.type}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">البلد :</strong> {apt.city}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">المنطقة :</strong> {apt.area}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">رقم العمارة :</strong> {apt.unitnum}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">رقم الشقة :</strong> {apt.apartmentnum}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">الدور :</strong> {apt.floor}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">الواجهة :</strong> {apt.front}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">المساحة :</strong> {apt.size}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">السعر :</strong> {apt.price}</li>
-        <li className="yellow fs-4"> <strong className="text-light fs-5">اللوكيشن :</strong>{" "} {apt.location ? ( <a href={apt.location} target="_blank" rel="noreferrer"> اضغط هنا </a> ) : ( <span className="yellow">لا يوجد</span> )} </li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">المميزات :</strong> {apt.notes}</li>
+        {apt.category && (<li className="yellow fs-4"><strong className="text-light fs-5"></strong> {apt.category}</li>)}
+        {apt.type && (<li className="yellow fs-4"><strong className="text-light fs-5">النوع :</strong> {apt.type}</li>)}
+        {apt.city && (<li className="yellow fs-4"><strong className="text-light fs-5">البلد :</strong> {apt.city}</li>)}
+        {apt.area && (<li className="yellow fs-4"><strong className="text-light fs-5">المنطقة :</strong> {apt.area}</li>)}
+        {apt.unitnum && (<li className="yellow fs-4"><strong className="text-light fs-5">رقم العمارة :</strong> {apt.unitnum}</li>)}
+        {apt.apartmentnum && (<li className="yellow fs-4"><strong className="text-light fs-5">رقم الشقة :</strong> {apt.apartmentnum}</li>)}
+        {apt.floor && (<li className="yellow fs-4"><strong className="text-light fs-5">الدور :</strong> {apt.floor}</li>)}
+        {apt.front && (<li className="yellow fs-4"><strong className="text-light fs-5">الواجهة :</strong> {apt.front}</li>)}
+        {apt.size && (<li className="yellow fs-4"><strong className="text-light fs-5">المساحة :</strong> {apt.size}</li>)}
+        {apt.price && (<li className="yellow fs-4"><strong className="text-light fs-5">السعر :</strong> {apt.price}</li>)}
+        {apt.location && (<li className="yellow fs-4"> <strong className="text-light fs-5">اللوكيشن :</strong>{" "} <a href={apt.location} target="_blank" rel="noreferrer"> اضغط هنا </a> </li>)}
+        {apt.notes && (<li className="yellow fs-4"><strong className="text-light fs-5">المميزات :</strong> {apt.notes}</li>)}
       </ul>
       <div className="text-center mt-3 d-flex justify-content-center">
         <Link className="cardbtn rounded nav-link custom-nav-link w-50 fs-5 fw-bold text-center text-warning mt-3" to="/Contact">تواصل معنا</Link>

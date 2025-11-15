@@ -69,16 +69,16 @@ function Houses() {
 
     <div className="apartment-body bg-secondary">
       <ul>
-        <li className="yellow fs-4"><strong className="text-light fs-5"></strong> {apt.category}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">البلد :</strong> {apt.city}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">المنطقة :</strong> {apt.area}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">رقم العمارة :</strong> {apt.number}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">عدد الأدوار :</strong> {apt.floornum}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">الواجهة :</strong> {apt.front}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">المساحة :</strong> {apt.size}</li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">السعر :</strong> {apt.price}</li>
-        <li className="yellow fs-4"> <strong className="text-light fs-5">اللوكيشن :</strong>{" "} {apt.location ? ( <a href={apt.location} target="_blank" rel="noreferrer"> اضغط هنا </a> ) : ( <span className="yellow">لا يوجد</span> )} </li>
-        <li className="yellow fs-4"><strong className="text-light fs-5">المميزات :</strong> {apt.notes}</li>
+        {apt.category && (<li className="yellow fs-4"><strong className="text-light fs-5"></strong> {apt.category}</li>)}
+        {apt.city && (<li className="yellow fs-4"><strong className="text-light fs-5">البلد :</strong> {apt.city}</li>)}
+        {apt.area && (<li className="yellow fs-4"><strong className="text-light fs-5">المنطقة :</strong> {apt.area}</li>)}
+        {apt.number && (<li className="yellow fs-4"><strong className="text-light fs-5">رقم العمارة :</strong> {apt.number}</li>)}
+        {apt.floornum && (<li className="yellow fs-4"><strong className="text-light fs-5">عدد الأدوار :</strong> {apt.floornum}</li>)}
+        {apt.front && (<li className="yellow fs-4"><strong className="text-light fs-5">الواجهة :</strong> {apt.front}</li>)}
+        {apt.size && (<li className="yellow fs-4"><strong className="text-light fs-5">المساحة :</strong> {apt.size}</li>)}
+        {apt.price && (<li className="yellow fs-4"><strong className="text-light fs-5">السعر :</strong> {apt.price}</li>)}
+        {apt.location && (<li className="yellow fs-4"> <strong className="text-light fs-5">اللوكيشن :</strong>{" "} <a href={apt.location} target="_blank" rel="noreferrer"> اضغط هنا </a> </li>)}
+        {apt.notes && (<li className="yellow fs-4"><strong className="text-light fs-5">المميزات :</strong> {apt.notes}</li>)}
       </ul>
       <div className="text-center mt-3 d-flex justify-content-center">
         <Link className="cardbtn rounded nav-link custom-nav-link w-50 fs-5 fw-bold text-center text-warning mt-3" to="/Contact">تواصل معنا</Link>
