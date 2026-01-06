@@ -79,7 +79,9 @@ function Buildings() {
         {apt.size && (<li className="yellow fs-4"><strong className="text-light fs-5">المساحة :</strong> {apt.size}</li>)}
         {apt.condition && (<li className="yellow fs-4"><strong className="text-light fs-5">حالة البناء :</strong> {apt.condition}</li>)}
         {apt.location && (<li className="yellow fs-4"> <strong className="text-light fs-5">اللوكيشن :</strong>{" "} <a href={apt.location} target="_blank" rel="noreferrer"> اضغط هنا </a> </li>)}
-        {apt.notes && (<li className="yellow fs-4"><strong className="text-light fs-5">ملاحظات :</strong> {apt.notes}</li>)}
+        {apt.owner && (<li className="yellow fs-4"><strong className="text-light fs-5">المالك :</strong> {apt.owner}</li>)}
+        {apt.date && (<li className="yellow fs-4"><strong className="text-light fs-5">التاريخ :</strong> {(apt.date)}</li>)}
+        {apt.notes && (<li className="yellow fs-4"><strong className="text-light fs-5">التفاصيل :</strong> {apt.notes}</li>)}
       </ul>
       <div className="text-center mt-3 d-flex justify-content-center">
         <Link className="cardbtn rounded nav-link custom-nav-link w-50 fs-5 fw-bold text-center text-warning mt-3" to="/Contact">تواصل معنا</Link>
