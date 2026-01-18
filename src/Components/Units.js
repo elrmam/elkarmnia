@@ -31,6 +31,9 @@ function Unit() {
                 <Link to="/Lands" className="col-3 rounded-4 units p-2 mx-2 mb-4 d-flex justify-content-center align-items-center text-decoration-none" >
                     <h3 className="yellow m-0 my-5">أراضى</h3>
                 </Link>
+                <Link to="/Buildings" className="col-3 rounded-4 units p-2 mx-2 mb-4 d-flex justify-content-center align-items-center text-decoration-none" >
+                    <h3 className="yellow m-0 my-5">تطوير</h3>
+                </Link>
             </div>
         </div>
     );

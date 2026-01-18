@@ -38,6 +38,14 @@
   display: block;
 }
 
+.building-body ul li {
+    white-space: pre-line;   /* عشان ينزل سطر جديد */
+    display: block;          /* عشان ياخد السطر كامل */
+    direction: rtl;          /* الاتجاه الأساسي عربي */
+    text-align: right;       /* الكلام يبدأ من اليمين */
+    unicode-bidi: plaintext; /* السطر ده هو الحل: بيخلي كل سطر يحدد اتجاهه بنفسه */
+}
+
 
 @keyframes float {
   0% {
